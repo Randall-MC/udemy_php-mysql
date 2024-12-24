@@ -23,11 +23,27 @@ if (isset($_POST['submit'])) {
   } else {
     $errores .= 'Por favor, ingresa un correo <br />';
   }
-
+  // Versión del curso
+  /*
   if (!empty($mensaje)) {
     $mensaje = htmlspecialchars($mensaje);
     $mensaje = trim($mensaje);
     $mensaje = stripslashes($mensaje);
+  } else {
+    $errores .= 'Por favor, el campo mensaje no puede estar vacío <br />';
+  } */
+
+  if (isset($mensaje)) {
+    // Eliminar todos los espacios en blanco, incluyendo saltos de línea
+    $mensaje = preg_replace('/\s+/', '', $mensaje);
+
+    if (!empty($mensaje)) {
+      $mensaje = htmlspecialchars($mensaje);
+      $mensaje = trim($mensaje);
+      $mensaje = stripslashes($mensaje);
+    } else {
+      $errores .= 'Por favor, el campo mensaje no puede estar vacío <br />';
+    }
   } else {
     $errores .= 'Por favor, el campo mensaje no puede estar vacío <br />';
   }
