@@ -30,7 +30,7 @@ if (isset($_POST['submit'])) {
     $mensaje = trim($mensaje);
     $mensaje = stripslashes($mensaje);
   } else {
-    $errores .= 'Por favor, el campo mensaje no puede estar vacío <br />';
+    $errores .= 'Por favor, ingresa el mensaje <br />';
   } */
 
   if (isset($mensaje)) {
