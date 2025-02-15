@@ -1,0 +1,94 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* <weight>: Use a value from 200 to 700
+<uniquifier>: Use a unique and descriptive class name */
+
+/*.oswald-<uniquifier> {
+  font-family: "Oswald", serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+} */
+
+.oswald-normal {
+  font-family: "Oswald", serif;
+  font-optical-sizing: auto;
+  font-weight: 200;
+  font-style: normal;
+}
+
+body {
+  background: #e9e9e9;
+  color: #2e2e2e;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+  width: 90%;
+  max-width: 1000px;
+  margin: auto;
+}
+
+h1 {
+  margin: 20px 0;
+  text-align: center;
+  font-family: "Oswald", Arial, Helvetica, sans-serif;
+  color: #ce7f08;
+  font-weight: normal;
+}
+
+.container .articles {
+  margin-bottom: 20px;
+}
+
+.container .articles ul {
+  list-style: none;
+}
+
+.container .articles ul li {
+  padding: 15px 10px;
+  border-bottom: 1px solid #c8c8c8;
+}
+
+.pagination ul {
+  list-style: none;
+}
+
+.pagination ul li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.pagination ul .active a {
+  background: #ce7f08;
+}
+
+.pagination ul .disabled {
+  background: #c8c8c8;
+  display: inline-block;
+  font-family: "Oswald", Arial, Helvetica, sans-serif;
+  padding: 15px 25px;
+  cursor: not-allowed;
+  color: #fff;
+  text-decoration: none;
+}
+
+.pagination ul li a {
+  display: inline-block;
+  font-family: "Oswald", Arial, Helvetica, sans-serif;
+  padding: 15px 25px;
+  background: #424242;
+  color: #fff;
+  text-decoration: none;
+}
+
+.pagination ul li a:hover {
+  text-decoration: none;
+  background: #3299bb;
+}
